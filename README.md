@@ -12,6 +12,10 @@ This repository aims to provide various Proof of Concept (POC) files for ethical
 - **CSRF_Json.html** - CSRF for REST APIs using JSON format
 
 
+### CORS (Cross-Origin Resource Sharing)
+
+- **Cors_Poc.html** - CORS misoconfiguration exploits can happen when a website allows a third-party website to access its resources using CORS without proper validation, which can result in unauthorized access to sensitive data.
+
 
 ---
 
