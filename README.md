@@ -1,2 +1,18 @@
-# Ethical_Hacking_POC
-This repository is aiming the development of different Poc (Proof of Concept)
+# Ethical Hacking POC Repository
+
+## Introduction:
+
+This repository aims to provide various Proof of Concept (POC) files for ethical hacking purposes. These POCs can help security professionals, penetration testers, and researchers demonstrate and verify vulnerabilities or security issues in clients' systems, networks, or applications.
+
+---
+
+### CSRF (Cross-Site Request Forgery)
+
+- **CSRF.html** - Traditional Poc for CSRF using the HTML Form
+- **CSRF_Json.html** - CSRF for REST APIs using JSON format
+
+
+
+---
+
+Note: The contents of this repository are for educational and research purposes only. Unauthorized hacking, penetration testing, or any illegal activities using these POCs are strictly prohibited. Always obtain proper authorization from the system owner before performing any security assessments.
